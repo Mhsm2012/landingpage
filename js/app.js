@@ -29,7 +29,8 @@
  * Start Helper Functions
  * 
 */
-
+// get access to nav_list and then create li for it 
+const barNav = document.getElementById("navbar__list");
 
 
 /**
