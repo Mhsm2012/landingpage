@@ -40,6 +40,12 @@ const barNav = document.getElementById("navbar__list");
 */
 
 // build the nav
+createNavList => (){
+document.querySelectorAll("section").forEach((section)=>{
+const item = '<li> <a href ="#${section.id}" data-nav"${section.id}" class = "menu__link">${section.dataset.nav}</a>'
+barNav.insertAdjacentHTML("beforeend",item);
+});
+};
 
 
 // Add class 'active' to section when near top of viewport
